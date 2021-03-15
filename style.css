@@ -1,0 +1,209 @@
+/* RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CONTAINER e img */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* STILO DO SITE */
+
+.capa {
+  background: url(./assets/capa.png);
+  background-size: cover  ;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.image-text-capa {
+  display: flex;
+}
+
+.perfil {
+  border: 10px solid #99dddd;
+  /* border-radius: 20px; */
+  margin-right: 20px;
+}
+
+.nome {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: #99dddd;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.funcao-cidade {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+}
+
+.item-navbar{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.icones{
+  margin-right: 10px;
+}
+.texto-icones{
+  margin-right: 20px;
+  font-size: 1.3125rem;
+  color: #707070;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.item-navbar1::after{
+  content: '';
+  width: calc(100% - 20px);
+  height: 5px;
+  position: absolute;
+  bottom: -10px;
+  background-color: #FFCC00;
+}
