@@ -146,7 +146,7 @@ img {
 
 .capa {
   background: url(./assets/capa.png);
-  background-size: cover  ;
+  background-size: cover;
   width: 100%;
   padding: 60px 0;
 }
@@ -176,34 +176,152 @@ img {
   color: #fff;
   margin-top: 10px;
 }
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 100;
 }
 
-.item-navbar{
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.navbar-ghost{
+  height: 55px;
+  width: 100%;
+  display: none;
+}
+.navbar-ghost-ativo{
+  display: block;
+}
+
+.item-navbar {
   display: flex;
   align-items: center;
   position: relative;
 }
-.icones{
+.icones {
   margin-right: 10px;
 }
-.texto-icones{
+.texto-icones {
   margin-right: 20px;
   font-size: 1.3125rem;
   color: #707070;
   font-family: "Noto Sans", sans-serif;
 }
 
-.item-navbar1::after{
-  content: '';
+.item-navbar1::after {
+  content: "";
   width: calc(100% - 20px);
-  height: 5px;
+  height: 3px;
   position: absolute;
   bottom: -10px;
-  background-color: #FFCC00;
+  background-color: #ffcc00;
+}
+
+.sobre-skills {
+  background-color: #EEFFFF;
+  padding: 60px 0;
+}
+
+.display-sobre-skills {
+  display: flex;
+}
+.sobre,
+.skills {
+  width: 430px;
+}
+.sobre {
+  margin-right: 110px;
+}
+.titles {
+  font-size: 3.75rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #99dddd;
+  font-weight: bold;
+}
+.separador {
+  width: 160px;
+  height: 3px;
+  background-color: #ffcc00;
+  margin: 15px 0;
+}
+.textos {
+  font-size: 1.3125rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #707070;
+  line-height: 1.7875rem;
+}
+
+.lista-skills{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.li-skills{
+  width: 10px;
+  height: 3px;
+  background-color: #ffcc00;
+  margin-right: 10px;
+}
+
+.item-lista-skill{
+  display: flex;
+  align-items: center;
+}
+
+.educacao{
+  padding: 60px 0
+}
+
+.cards-educacao{
+  display: flex;
+}
+
+.card-educ{
+  width: 520px;
+  padding: 20px;
+  background-color: #EEFFFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card-educ:nth-child(1){
+  margin-right: 20px;
+}
+.curso{
+  font-size: 1.3125rem;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.7875rem;
+}
+
+.instituicao, .ano{
+  font-size: 1.125rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #707070;
+  line-height: 1.5325rem;
+}
+.ano{
+  color: #99dddd;
+  font-weight: bold;
+}
+
+.experiencia{
+  background-color: #EEFFFF;
+  padding: 60px 0;;
+}
+
+.empresa{
+  color: #000;
+  margin: 15px 0;
+}
+
+.texto-empresa{
+  width: 520px
 }
