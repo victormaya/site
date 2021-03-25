@@ -123,6 +123,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
 
 /* CONTAINER e img */
 .container {
@@ -145,7 +148,7 @@ img {
 /* STILO DO SITE */
 
 .capa {
-  background: url(./assets/capa.png);
+  background: url(./assets/images/capa.png);
   background-size: cover;
   width: 100%;
   padding: 60px 0;
@@ -156,24 +159,23 @@ img {
 }
 
 .perfil {
-  border: 10px solid #99dddd;
+  border: 10px solid #272643;
   /* border-radius: 20px; */
   margin-right: 20px;
 }
 
 .nome {
   font-family: "Noto Sans", sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: #99dddd;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #272643;
 }
 
 .funcao-cidade {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   font-weight: bold;
-  color: #fff;
+  color: #272643;
   margin-top: 10px;
 }
 .navbar {
@@ -185,48 +187,64 @@ img {
   z-index: 100;
 }
 
-.navbar-fixed{
+.navbar-fixed {
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
 }
 
-.navbar-ghost{
+.navbar-ghost {
   height: 55px;
   width: 100%;
   display: none;
 }
-.navbar-ghost-ativo{
+.navbar-ghost-ativo {
   display: block;
 }
 
-.item-navbar {
+.item-navbar,
+.item-navbar a {
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .icones {
   margin-right: 10px;
 }
 .texto-icones {
   margin-right: 20px;
-  font-size: 1.3125rem;
-  color: #707070;
+  font-size: 1.125rem;
+  color: #272643;
   font-family: "Noto Sans", sans-serif;
 }
 
-.item-navbar1::after {
+.texto-icones-curriculo {
+  margin-right: 0;
+}
+
+.item-navbar-ativo::after,
+.item-navbar:hover::after {
   content: "";
-  width: calc(100% - 20px);
   height: 3px;
   position: absolute;
   bottom: -10px;
   background-color: #ffcc00;
+  animation: barraNav 0.5s forwards;
+}
+
+.item-navbar:last-child:hover::after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  background-color: #ffcc00;
+  animation: lastBarraNav 0.5s forwards;
 }
 
 .sobre-skills {
-  background-color: #EEFFFF;
+  background-color: #dff8f6;
   padding: 60px 0;
 }
 
@@ -241,87 +259,214 @@ img {
   margin-right: 110px;
 }
 .titles {
-  font-size: 3.75rem;
+  font-size: 3rem;
   font-family: "Noto Sans", sans-serif;
-  color: #99dddd;
+  color: #272643;
   font-weight: bold;
 }
-.separador {
-  width: 160px;
-  height: 3px;
-  background-color: #ffcc00;
-  margin: 15px 0;
-}
+
 .textos {
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   font-family: "Noto Sans", sans-serif;
-  color: #707070;
+  color: #272643;
   line-height: 1.7875rem;
 }
 
-.lista-skills{
+.lista-skills {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.li-skills{
+.li-skills {
   width: 10px;
   height: 3px;
   background-color: #ffcc00;
   margin-right: 10px;
 }
 
-.item-lista-skill{
+.item-lista-skill {
   display: flex;
   align-items: center;
 }
 
-.educacao{
-  padding: 60px 0
+.educacao {
+  padding: 60px 0;
 }
 
-.cards-educacao{
+.cards-educacao {
   display: flex;
 }
 
-.card-educ{
+.card-educ {
   width: 520px;
   padding: 20px;
-  background-color: #EEFFFF;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: #dff8f6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.card-educ:nth-child(1){
+.card-educ:nth-child(1) {
   margin-right: 20px;
 }
-.curso{
-  font-size: 1.3125rem;
+.curso {
+  font-size: 1.125rem;
   font-weight: bold;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.7875rem;
+  color: #272643;
 }
 
-.instituicao, .ano{
+.instituicao,
+.ano {
   font-size: 1.125rem;
   font-family: "Noto Sans", sans-serif;
-  color: #707070;
+  color: #272643;
   line-height: 1.5325rem;
 }
-.ano{
-  color: #99dddd;
+.ano {
+  color: #64dbd4;
   font-weight: bold;
 }
 
-.experiencia{
-  background-color: #EEFFFF;
-  padding: 60px 0;;
+.experiencia {
+  background-color: #dff8f6;
+  padding: 60px 0;
 }
 
-.empresa{
-  color: #000;
+.empresa {
+  color: #272643;
   margin: 15px 0;
 }
 
-.texto-empresa{
-  width: 520px
+.texto-empresa {
+  width: 520px;
+}
+
+.portfolio {
+  padding: 60px 0;
+}
+
+.card-portfolio {
+  display: flex;
+}
+
+.portfolio1 {
+  margin-right: 20px;
+}
+
+.contato {
+  padding: 60px 0;
+  background-color: #272643;
+}
+
+.title-contato {
+  text-align: center;
+  color: #64dbd4;
+}
+
+.links-contato {
+  display: flex;
+  justify-content: center;
+}
+
+.item-contato {
+  margin-right: 20px;
+}
+.item-contato:nth-child(4) {
+  margin-right: 0px;
+}
+
+@keyframes barraNav {
+  from {
+    width: 0px;
+  }
+  to {
+    width: calc(100% - 20px);
+  }
+}
+@keyframes lastBarraNav {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.sessao {
+  opacity: 0;
+  transform: translate3d(-60px, 0, 0);
+}
+
+.sessao-ativo {
+  animation: showSection 1s forwards;
+}
+@keyframes showSection {
+  from {
+    opacity: 0;
+    transform: translate3d(-60px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.separador {
+  width: 0;
+  height: 3px;
+  background-color: #ffcc00;
+  margin: 15px 0;
+}
+
+.separador-ativo {
+  animation: showSeparador 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.separador-contato-box {
+  display: flex;
+  justify-content: center;
+}
+@keyframes showSeparador {
+  from {
+    width: 0;
+  }
+  to {
+    width: 160px;
+  }
+}
+
+.item-portfolio {
+  position: relative;
+}
+
+.item-portfolio {
+  position: relative;
+}
+
+.box-title-item-port {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-item-port {
+  font-size: 2.25rem;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  color: #64dbd4;
+  display: none;
+}
+.box-title-item-port:hover .title-item-port{
+  display: block;
+}
+
+.box-title-item-port:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
