@@ -1,0 +1,94 @@
+@media (max-width: 900px) {
+  .container {
+    width: 80%;
+  }
+  .capa {
+    padding: 30px 0;
+  }
+  .image-text-capa {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-capa {
+    text-align: center;
+  }
+  .box-perfil {
+    width: 30%;
+  }
+  .perfil {
+    margin: 0;
+  }
+  .nome {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  #perfil, #skills, #educacao, #experiencia, #portfolio, #contato {
+    display: none;
+  }
+  .display-sobre-skills {
+    flex-direction: column;
+  }
+  .sobre-skills {
+    padding: 30px 0;
+  }
+  .sobre,
+  .skills {
+    width: 100%;
+    margin: 0;
+  }
+  .sobre{
+    margin-bottom: 2rem;
+  }
+  .titles {
+    font-size: 1.5rem;
+  }
+  .textos{
+    font-size: 0.875rem
+  }
+  .educacao{
+    padding: 30px 0;
+    width: 90%;
+  }
+  .cards-educacao{
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .card-educ{
+    padding: 1rem;
+    width: 100%;
+  }
+  .card-educ:nth-child(1){
+    margin-bottom: 1rem;
+  }
+  .experiencia {
+    padding: 0;
+  }
+  .experiencia .container{
+    padding: 30px 0;
+  }
+  .texto-empresa{
+    width: 100%;
+  }
+  .portfolio{
+    padding: 30px 0;
+  }
+  .card-portfolio{
+    flex-direction: column;
+  }
+  .item-portfolio:nth-child(1){
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .contato{
+    padding: 30px 0;
+  }
+  .links-contato a{
+    width: 10%;
+  }
+
+
+
+
+}
