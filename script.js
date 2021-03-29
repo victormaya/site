@@ -32,22 +32,22 @@ if (window.innerWidth > 900) {
       });
       perfil.classList.add("item-navbar-ativo");
     }
-    if (pagetop >= 377 && pagetop < 805) {
+    if (pagetop >= 377 && pagetop < 746) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       skills.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 805 && pagetop < 1116) {
+    } else if (pagetop >= 746 && pagetop < 1060) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       educacao.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 1116 && pagetop < 1514) {
+    } else if (pagetop >= 1060 && pagetop < 1457) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       experiencia.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 1514) {
+    } else if (pagetop >= 1457) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
@@ -61,22 +61,40 @@ if (window.innerWidth > 900) {
   const goScroll = (index) => {
     switch (index) {
       case 0:
-        window.scrollTo(0, 0);
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
         break;
       case 1:
-        window.scrollTo(0, 377);
+        window.scrollTo({
+          top: 377,
+          behavior: 'smooth'
+        });
         break;
       case 2:
-        window.scrollTo(0, 842);
+        window.scrollTo({
+          top: 746,
+          behavior: 'smooth'
+        });
         break;
       case 3:
-        window.scrollTo(0, 1168);
+        window.scrollTo({
+          top: 1060,
+          behavior: 'smooth'
+        });
         break;
       case 4:
-        window.scrollTo(0, 1577);
+        window.scrollTo({
+          top: 1457,
+          behavior: 'smooth'
+        });
         break;
       case 5:
-        window.scrollTo(0, 1577);
+        window.scrollTo({
+          top: 1530,
+          behavior: 'smooth'
+        });
         break;
       case 6:
         break;
@@ -149,7 +167,7 @@ if (window.innerWidth > 900) {
       sections[3].classList.add("sessao-ativo");
       separadores[4].classList.add("separador-ativo");
     }
-    if (pagetop >= 1798) {
+    if (pagetop >= 1795) {
       sections[4].classList.add("sessao-ativo");
       separadores[5].classList.add("separador-ativo");
     }
