@@ -74,25 +74,25 @@ if (window.innerWidth > 900) {
         break;
       case 2:
         window.scrollTo({
-          top: 746,
+          top: 855,
           behavior: 'smooth'
         });
         break;
       case 3:
         window.scrollTo({
-          top: 1060,
+          top: 1291,
           behavior: 'smooth'
         });
         break;
       case 4:
         window.scrollTo({
-          top: 1457,
+          top: 1807,
           behavior: 'smooth'
         });
         break;
       case 5:
         window.scrollTo({
-          top: 1530,
+          top: 2000,
           behavior: 'smooth'
         });
         break;

@@ -1,8 +1,8 @@
 /* STILO DO SITE */
 
 .capa {
-  background: url(./assets/images/capa.png);
-  background-size: cover;
+  background: rgb(0, 0, 0);
+  background: #2d2d2d;
   width: 100%;
   padding: 60px 0;
 }
@@ -12,7 +12,7 @@
 }
 
 .perfil {
-  border: 10px solid #272643;
+  border: 5px solid #f9fafb;
   /* border-radius: 20px; */
   margin-right: 20px;
 }
@@ -21,14 +21,14 @@
   font-family: "Noto Sans", sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  color: #272643;
+  color: #f9fafb;
 }
 
 .funcao-cidade {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.125rem;
   font-weight: bold;
-  color: #272643;
+  color: #bdbdbd;
   margin-top: 10px;
 }
 .navbar {
@@ -37,6 +37,7 @@
   justify-content: center;
   padding: 10px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #424242;
   z-index: 100;
 }
 
@@ -44,13 +45,13 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
 }
 
 .navbar-ghost {
   height: 55px;
   width: 100%;
   display: none;
+  background: #424242;
 }
 .navbar-ghost-ativo {
   display: block;
@@ -69,7 +70,7 @@
 .texto-icones {
   margin-right: 20px;
   font-size: 1.125rem;
-  color: #272643;
+  color: #f9fafb;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -83,7 +84,7 @@
   height: 3px;
   position: absolute;
   bottom: -10px;
-  background-color: #ffcc00;
+  background-color: #ff3f26;
   animation: barraNav 0.5s forwards;
 }
 
@@ -92,13 +93,13 @@
   height: 3px;
   position: absolute;
   bottom: -10px;
-  background-color: #ffcc00;
+  background-color: #ff3f26;
   animation: lastBarraNav 0.5s forwards;
 }
 
 .sobre-skills {
-  background-color: #dff8f6;
-  padding: 60px 0;
+  background-color: #f9fafb;
+  padding: 120px 0;
 }
 
 .display-sobre-skills {
@@ -114,14 +115,20 @@
 .titles {
   font-size: 3rem;
   font-family: "Noto Sans", sans-serif;
-  color: #272643;
+  color: #000;
+  font-weight: bold;
+}
+.titles-white {
+  font-size: 3rem;
+  font-family: "Noto Sans", sans-serif;
+  color: #f9fafb;
   font-weight: bold;
 }
 
 .textos {
   font-size: 1.125rem;
   font-family: "Noto Sans", sans-serif;
-  color: #272643;
+  color: #2d2d2d;
   line-height: 1.7875rem;
 }
 
@@ -134,7 +141,7 @@
 .li-skills {
   width: 10px;
   height: 3px;
-  background-color: #ffcc00;
+  background-color: #ff3f26;
   margin-right: 10px;
 }
 
@@ -143,21 +150,39 @@
   align-items: center;
 }
 
+.box-educacao {
+  background: #2d2d2d;
+}
+
 .educacao {
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 .cards-educacao {
   display: flex;
 }
 
-.card-educ {
+.box-card-educ {
   width: 520px;
-  padding: 20px;
-  background-color: #dff8f6;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  
+  background: #5C5C5C;
+  
+
 }
-.card-educ:nth-child(1) {
+
+.card-educ {
+  padding: 20px;
+  background-color: #424242;
+  transition: top 10s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: left 10s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-educ:hover {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  
+}
+.box-card-educ:nth-child(1) {
   margin-right: 20px;
 }
 .curso {
@@ -165,24 +190,24 @@
   font-weight: bold;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.7875rem;
-  color: #272643;
+  color: #f9fafb;
 }
 
 .instituicao,
 .ano {
   font-size: 1.125rem;
   font-family: "Noto Sans", sans-serif;
-  color: #272643;
+  color: #bdbdbd;
   line-height: 1.5325rem;
 }
 .ano {
-  color: #64dbd4;
+  color: #ff3f26;
   font-weight: bold;
 }
 
 .experiencia {
-  background-color: #dff8f6;
-  padding: 60px 0;
+  background-color: #f9fafb;
+  padding: 120px 0;
 }
 
 .empresa {
@@ -194,8 +219,12 @@
   width: 520px;
 }
 
+.box-portfolio {
+  background: #2d2d2d;
+}
+
 .portfolio {
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 .card-portfolio {
@@ -208,12 +237,12 @@
 
 .contato {
   padding: 60px 0;
-  background-color: #272643;
+  background-color: #000;
 }
 
 .title-contato {
   text-align: center;
-  color: #64dbd4;
+  color: #f9fafb;
 }
 
 .links-contato {
@@ -267,7 +296,7 @@
 .separador {
   width: 0;
   height: 3px;
-  background-color: #ffcc00;
+  background-color: #ff3f26;
   margin: 15px 0;
 }
 
@@ -313,13 +342,17 @@
   text-align: center;
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
-  color: #64dbd4;
+  color: #f9fafb;
   display: none;
 }
-.box-title-item-port:hover .title-item-port{
+.box-title-item-port:hover .title-item-port {
   display: block;
 }
 
 .box-title-item-port:hover {
   background: rgba(0, 0, 0, 0.7);
+}
+
+.svg-padrao path:hover, .svg-diferente rect:hover{
+  fill: #ff3f26;
 }
