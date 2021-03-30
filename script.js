@@ -32,22 +32,22 @@ if (window.innerWidth > 900) {
       });
       perfil.classList.add("item-navbar-ativo");
     }
-    if (pagetop >= 377 && pagetop < 746) {
+    if (pagetop >= 377 && pagetop < 855) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       skills.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 746 && pagetop < 1060) {
+    } else if (pagetop >= 855 && pagetop < 1291) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       educacao.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 1060 && pagetop < 1457) {
+    } else if (pagetop >= 1291 && pagetop < 1807) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
       experiencia.classList.add("item-navbar-ativo");
-    } else if (pagetop >= 1457) {
+    } else if (pagetop >= 1807) {
       itemsAll.forEach((item) => {
         item.classList.remove("item-navbar-ativo");
       });
