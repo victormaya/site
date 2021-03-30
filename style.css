@@ -1,8 +1,11 @@
 /* STILO DO SITE */
 
+.page{
+  background: url(./assets/images/fundo.jpg) center center no-repeat fixed;
+}
+
 .capa {
-  background: rgb(0, 0, 0);
-  background: #2d2d2d;
+  background: rgba(0, 0, 0, 0);
   width: 100%;
   padding: 60px 0;
 }
