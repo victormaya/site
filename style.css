@@ -1,39 +1,53 @@
 /* STILO DO SITE */
 
-.page{
+.page {
   background: url(./assets/images/fundo.jpg) center center no-repeat fixed;
 }
 
 .capa {
   background: rgba(0, 0, 0, 0);
   width: 100%;
-  padding: 60px 0;
+  padding: 150px 0;
 }
 
 .image-text-capa {
   display: flex;
 }
 
+.text-capa {
+  width: 100%;
+}
+
 .perfil {
   border: 5px solid #f9fafb;
   /* border-radius: 20px; */
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .nome {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.75rem;
+  font-weight: 800;
   color: #f9fafb;
+  letter-spacing: 6px;
 }
 
-.funcao-cidade {
-  font-family: "Noto Sans", sans-serif;
-  font-size: 1.125rem;
-  font-weight: bold;
-  color: #bdbdbd;
+.nome span {
+  color: #ff3f26;
+}
+
+.funcao-cidade,
+.ola {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: #f9f9f9;
   margin-top: 10px;
 }
+
+.ola {
+  color: #ff3f26;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -74,7 +88,7 @@
   margin-right: 20px;
   font-size: 1.125rem;
   color: #f9fafb;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .texto-icones-curriculo {
@@ -100,9 +114,9 @@
   animation: lastBarraNav 0.5s forwards;
 }
 
-.sobre-skills {
+.box-sobre {
   background-color: #f9fafb;
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .display-sobre-skills {
@@ -110,47 +124,58 @@
 }
 .sobre,
 .skills {
-  width: 430px;
+  width: 100%;
 }
 .sobre {
   margin-right: 110px;
 }
 .titles {
-  font-size: 3rem;
-  font-family: "Noto Sans", sans-serif;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
 .titles-white {
-  font-size: 3rem;
-  font-family: "Noto Sans", sans-serif;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
   color: #f9fafb;
-  font-weight: bold;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .textos {
   font-size: 1.125rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #2d2d2d;
   line-height: 1.7875rem;
+}
+
+.box-skills {
+  background: #2d2d2d;
+  padding: 150px 0;
 }
 
 .lista-skills {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-
-.li-skills {
-  width: 10px;
-  height: 3px;
-  background-color: #ff3f26;
-  margin-right: 10px;
-}
-
 .item-lista-skill {
   display: flex;
-  align-items: center;
+  width: calc(25% - 15px);
+  margin-bottom: 20px;;
+}
+
+.item-lista-skill:nth-child(1),
+.item-lista-skill:nth-child(2),
+.item-lista-skill:nth-child(3),
+.item-lista-skill:nth-child(5),
+.item-lista-skill:nth-child(6),
+.item-lista-skill:nth-child(7),
+.item-lista-skill:nth-child(9) {
+  margin-right: 20px;
 }
 
 .box-educacao {
@@ -167,10 +192,8 @@
 
 .box-card-educ {
   width: 520px;
-  
-  background: #5C5C5C;
-  
 
+  background: #5c5c5c;
 }
 
 .card-educ {
@@ -183,7 +206,6 @@
   position: relative;
   top: 5px;
   left: 5px;
-  
 }
 .box-card-educ:nth-child(1) {
   margin-right: 20px;
@@ -191,7 +213,7 @@
 .curso {
   font-size: 1.125rem;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.7875rem;
   color: #f9fafb;
 }
@@ -199,7 +221,7 @@
 .instituicao,
 .ano {
   font-size: 1.125rem;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #bdbdbd;
   line-height: 1.5325rem;
 }
@@ -343,7 +365,7 @@
 .title-item-port {
   font-size: 2.25rem;
   text-align: center;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #f9fafb;
   display: none;
@@ -356,6 +378,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-.svg-padrao path:hover, .svg-diferente rect:hover{
+.svg-padrao path:hover,
+.svg-diferente rect:hover {
   fill: #ff3f26;
 }
