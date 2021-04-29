@@ -25,7 +25,7 @@
 }
 
 .nome {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 5.75rem;
   font-weight: 800;
   color: #f9fafb;
@@ -38,9 +38,9 @@
 
 .funcao-cidade,
 .ola {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  color: #f9f9f9;
+  color: #f9fafb;
   margin-top: 10px;
 }
 
@@ -88,7 +88,7 @@
   margin-right: 20px;
   font-size: 1.125rem;
   color: #f9fafb;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .texto-icones-curriculo {
@@ -97,7 +97,7 @@
 
 .item-navbar-ativo::after,
 .item-navbar:hover::after {
-  content: "";
+  content: '';
   height: 3px;
   position: absolute;
   bottom: -10px;
@@ -106,7 +106,7 @@
 }
 
 .item-navbar:last-child:hover::after {
-  content: "";
+  content: '';
   height: 3px;
   position: absolute;
   bottom: -10px;
@@ -131,7 +131,7 @@
 }
 .titles {
   font-size: 4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #000;
   font-weight: 700;
   text-transform: uppercase;
@@ -139,7 +139,7 @@
 
 .titles-white {
   font-size: 4rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #f9fafb;
   font-weight: 700;
   text-transform: uppercase;
@@ -147,7 +147,7 @@
 
 .textos {
   font-size: 1.125rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #2d2d2d;
   line-height: 1.7875rem;
 }
@@ -180,24 +180,24 @@
   left: 50%;
   bottom: 1rem;
   opacity: 0;
-  width: 100%
+  width: 100%;
 }
 .item-lista-skill:hover p {
   animation: showSkill 0.5s forwards;
 }
 
-@keyframes showSkill{
-  from{
+@keyframes showSkill {
+  from {
     opacity: 0;
     transform: translateX(-75%);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(-50%);
   }
 }
 
-.box-image-skill{
+.box-image-skill {
   width: 60%;
   margin-bottom: 1rem;
 }
@@ -213,7 +213,7 @@
 }
 
 .box-educacao {
-  background: #2d2d2d;
+  background: #f9fafb;
 }
 
 .educacao {
@@ -247,7 +247,7 @@
 .curso {
   font-size: 1.125rem;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.7875rem;
   color: #f9fafb;
 }
@@ -255,7 +255,7 @@
 .instituicao,
 .ano {
   font-size: 1.125rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #bdbdbd;
   line-height: 1.5325rem;
 }
@@ -265,21 +265,23 @@
 }
 
 .experiencia {
-  background-color: #f9fafb;
+  background-color: #2d2d2d;
   padding: 120px 0;
 }
 
 .empresa {
-  color: #272643;
+  color: #f9fafb;
   margin: 15px 0;
+  font-weight: bold;
 }
 
 .texto-empresa {
   width: 520px;
+  color: #f9fafb;
 }
 
 .box-portfolio {
-  background: #2d2d2d;
+  background: #f9fafb;
 }
 
 .portfolio {
@@ -334,7 +336,6 @@
 }
 
 .sessao {
-  opacity: 0;
   transform: translate3d(-60px, 0, 0);
 }
 
@@ -399,7 +400,7 @@
 .title-item-port {
   font-size: 2.25rem;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #f9fafb;
   display: none;
